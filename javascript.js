@@ -39,7 +39,7 @@ function playRound (humanChoice, computerChoice){
         (humanChoice == "tijeras" && computerChoice == "papel")
     ){
         humanScore++;
-        return console.log(`¡Ganas el human! ${humanChoice} vence a ${computerChoice}.`);
+        return console.log(`¡Ganaste! ${humanChoice} vence a ${computerChoice}.`);
     } else{
         computerScore++;
         return console.log(`Gana la PC! ${computerChoice} vence a ${humanChoice}.`);
@@ -61,7 +61,7 @@ function playGame(){
     if(humanScore>computerScore){
         console.log(`Ganaste el juego con ${humanScore} puntos frente a ${computerScore} puntos.`);
     } else if (computerScore>humanScore){
-        console.log(`Ganaste el juego con ${computerScore} puntos frente a ${humanScore} puntos.`);
+        console.log(`Gano la pc el juego con ${computerScore} puntos frente a ${humanScore} puntos.`);
     } else{
         console.log(`El juego terminó en empate con ${humanScore} puntos para ambos.`);
     }
