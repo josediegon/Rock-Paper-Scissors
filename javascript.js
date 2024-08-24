@@ -20,7 +20,7 @@ function getHumanChoice(){
         return promptUser;
     } else{
         console.log("Elección no válida. Por favor elige entre piedra, papel o tijeras.");
-        return getComputerChoice();
+        return getHumanChoice();
     }
 }
  /*Paso 3: Declarar las variables de puntuación de los jugadores */
